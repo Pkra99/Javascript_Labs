@@ -22,14 +22,14 @@ const welcomeScreen = function (username) {
     let isLoggedIN = true
     let isEmployee = true
     
-    if(isEmployee && isEmployee) {
+    if(isLoggedIN && isEmployee) {
         console.log(`Welcome back, ${username}`)
     }
 }
 
 welcomeScreen("Jhon")
 
-const logginInfo = function () {
+const usrLogginInfo = function () {
     let isloggedInFromGmail = true
     let isloggedInFromFacebook = false
     
@@ -38,7 +38,7 @@ const logginInfo = function () {
     }
 }
 
-logginInfo()
+usrLogginInfo()
 
 //terniary operator
 //condition ? ture : false

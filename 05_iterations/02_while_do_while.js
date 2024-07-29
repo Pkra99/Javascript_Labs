@@ -1,7 +1,17 @@
+//while loop
 
 let count = 1
 
 while(count <= 10 ){
     console.log(count)
-    count = count + 2
+    count++
 }
+
+let num = 11
+
+//do while loop
+
+do {
+    console.log(num)
+    num++
+} while (num < 10)
