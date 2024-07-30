@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "browser",
+            "name": "com.google.Chrome",
+            "url": "$PROJECT_DIR$/06_DOM.js/01.html",
+        },
+        
+    ]
+}
