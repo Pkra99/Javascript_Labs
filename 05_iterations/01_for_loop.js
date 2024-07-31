@@ -2,35 +2,35 @@
 //Printing tables
 
 for (let i = 1; i <= 10; i++) {
-    console.log()
-    console.log("Table of:" + i)
-    console.log()
-    for(let j = 1; j <= 10; j++) {
-        console.log(i + "*" + j + "=" + i*j);
-    }
+  console.log();
+  console.log("Table of:" + i);
+  console.log();
+  for (let j = 1; j <= 10; j++) {
+    console.log(i + "*" + j + "=" + i * j);
+  }
 }
 
 //forOf loop
 
-const nums = [1, 2, 3, 5, 6]
+const nums = [1, 2, 3, 5, 6];
 
-for(const num of nums) {
-    console.log(num)
+for (const num of nums) {
+  console.log(num);
 }
 
-const str = "ForOfLoop"
+const str = "ForOfLoop";
 
-for (const char of str){
-    console.log(char)
+for (const char of str) {
+  console.log(char);
 }
 
-const myMap = new Map()
-myMap.set('Name', 'Jhon')
-myMap.set('Country', 'US')
-myMap.set('Course', 'CS')
+const myMap = new Map();
+myMap.set("Name", "Jhon");
+myMap.set("Country", "US");
+myMap.set("Course", "CS");
 
 for (const [key, value] of myMap) {
-    console.log(key + ":- " + value)
+  console.log(key + ":- " + value);
 }
 
 //forOf loop can be only used with the iterable and can not be used with objects
@@ -38,26 +38,26 @@ for (const [key, value] of myMap) {
 //forIn loop
 
 const car = {
-    'Brand': 'Toyota',
-    'Model': 'Legender',
-    'Price': '$9999'
-}
+  Brand: "Toyota",
+  Model: "Legender",
+  Price: "$9999",
+};
 
-for(const cars in car) {
-    console.log(`${cars} : ${car[cars]}`)
+for (const cars in car) {
+  console.log(`${cars} : ${car[cars]}`);
 }
 
 //using forIn loop with arrays
 
-const languages = ['Javascript', 'java', 'c++']
+const languages = ["Javascript", "java", "c++"];
 
-for(const language in languages){
-    console.log(languages[language])
+for (const language in languages) {
+  console.log(languages[language]);
 }
 
 //forEach loop
 
-const skills = ['Frot-end', 'Back-end', 'Full-stack']
+const skills = ["Frot-end", "Back-end", "Full-stack"];
 
 //skills.forEach(function (skill) {
 //    console.log(skill)
@@ -72,27 +72,27 @@ const skills = ['Frot-end', 'Back-end', 'Full-stack']
 //    console.log(skill)
 //} )
 
-skills.forEach((skill, index, skills)=> {
-    console.log(skill, index, skills)
-})
+skills.forEach((skill, index, skills) => {
+  console.log(skill, index, skills);
+});
 
 const development = [
-    {
-        'Front-end': 'Request',
-        'language': 'HTML, Javascript'
-    },
+  {
+    "Front-end": "Request",
+    language: "HTML, Javascript",
+  },
 
-    {
-        'Back-end': 'Response',
-        'language': 'Spring, NodeJS, Django'
-    },
+  {
+    "Back-end": "Response",
+    language: "Spring, NodeJS, Django",
+  },
 
-    {
-        'databases': 'CURD Operations',
-        'language': 'mysql, mongoDB'
-    }
-]
+  {
+    databases: "CURD Operations",
+    language: "mysql, mongoDB",
+  },
+];
 
-development.forEach( (item)=> {
-    console.log(item.language)
-})
+development.forEach((item) => {
+  console.log(item.language);
+});
