@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="animals">
+        <li>Dogs</li>
+    </ul>
+</body>
+<script>
+
+// creating Elements 
+
+    function addAnimals(animalName){
+        const list = document.createElement('li')
+        list.innerHTML = `${animalName}`
+        document.querySelector('.animals').appendChild(list)
+    }
+    addAnimals("Cats")
+    addAnimals("Cows")
+
+//recommended method (optimized way)
+    
+    function addOptiAnimals(animalName){
+        const list = document.createElement('li')
+        list.appendChild(document.createTextNode(animalName))
+        document.querySelector('.animals').appendChild(list)
+    }
+    addOptiAnimals('Deers')
+
+// editing Elements 
+
+    const secondAnimal = document.querySelector('li:nth-child(2)')
+
+//optimized way 
+
+    secondAnimal.innerHTML = 'Lions'
+
+//slightly less optimized way
+    
+    const newLi = document.createElement('li')
+    newLi.textContent = 'Tigers'
+    secondAnimal.replaceWith(newLi)
+
+//another way
+
+    const firstAnimal = document.querySelector('li:first-child')
+    firstAnimal.outerHTML = '<li>Cats</li>'
+
+//removing Elements
+
+    const lastAnimal = document.querySelector('li:last-child')
+    lastAnimal.remove()
+    
+</script>
+</html>
